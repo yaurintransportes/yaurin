@@ -10,13 +10,56 @@
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 
-    <%= stylesheet_link_tag :site %>
+    <%= stylesheet_link_tag :reset %>
+    <%= stylesheet_link_tag :main %>
+    <%= stylesheet_link_tag :ionicons %>
     <%= javascript_include_tag :all %>
+    <%= javascript_include_tag :main %>
+    <%= javascript_include_tag :accordian %>
   </head>
 
   <body class="<%= page_classes %>">
-    <a href="about.html">About</a>
-     <a href="index.html">Home</a>
+
+  <header id="page-header">
+      <!-- <div class="wrapper"> -->
+      <section>
+        <a href="index.html"><img src="images/logo1.jpg"></a>
+        <!-- <div id="app"> -->
+        <!-- <header> -->
+        <div id="tagline">
+          <h2>Rapido.Directo.Confiable</h2>
+        </div>
+      </section>
+      <section>
+        <div class="clearfix">
+          <form id="new" class="search-form">
+            <input id="content" type="text" placeholder="Content Search"> 
+            <button id="add">
+              <i class="icon ion-ios-arrow-forward"></i>
+            </button>
+          </form>
+        </div>
+          <!-- </header> -->
+        <!-- <div id="search">Content Search...</div> -->
+        
+        <nav class="clearfix">
+          <div id="respond">
+            <ul>
+              <li><strong><a href="index.html">Home</a></strong></li>
+              <li><strong><a href="services.html">Services</a></strong></li>    
+              <li><strong><a href="about.html">About</a></strong></li>
+              <li><strong><a href="contact.html">Contact</a></strong></li>      
+            </ul>
+          </div>
+
+          <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </section>
+    </header>
 
     <h2>Before</h2>
     <%= yield %>
