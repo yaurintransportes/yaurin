@@ -17,6 +17,7 @@
     <%= javascript_include_tag :all %>
     <%= javascript_include_tag :main %>
     <%= javascript_include_tag :accordian %>
+    <%= javascript_include_tag page_classes %>
   </head>
 
   <body class="<%= page_classes %>">
@@ -46,10 +47,10 @@
         <nav class="clearfix">
           <div id="respond">
             <ul>
-              <li><strong><a href="index.html">Home</a></strong></li>
-              <li><strong><a href="services.html">Services</a></strong></li>    
-              <li><strong><a href="about.html">About</a></strong></li>
-              <li><strong><a href="contact.html">Contact</a></strong></li>      
+              <li data-tab="home"><strong><a href="index.html">Home</a></strong></li>
+              <li data-tab="services"><strong><a href="services.html">Services</a></strong></li>    
+              <li data-tab="about"><strong><a href="about.html">About</a></strong></li>
+              <li data-tab="contact"><strong><a href="contact.html">Contact</a></strong></li>      
             </ul>
           </div>
 

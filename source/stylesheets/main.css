@@ -130,6 +130,11 @@ form#new {
 	visibility: visible;
 	padding: 20px 10px ;
 }
+.selected-header-tab {
+	color: white;
+	background:#FAAB18;
+	visibility: visible;
+}
 .ad-spacer {
 	border-bottom: 20px solid #FAAB18;
 }
