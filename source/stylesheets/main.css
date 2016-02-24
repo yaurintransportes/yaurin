@@ -1,3 +1,21 @@
+.left {
+	background: url(../images/welcome.jpg) no-repeat;
+	height: 300px;
+	overflow: hidden;
+    float: left;
+    width: 75%;
+}
+
+.right {
+    background-color: Aqua;
+    margin-left: 75%;
+    height: 300px;
+}
+
+.banner-wrapper {
+	overflow: hidden;
+}
+
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
@@ -178,8 +196,6 @@ form  {
 	padding-left:50px;
 	float: left;
 }
-
-
 
 .banner {
 	background: url(../images/welcome.jpg) center center no-repeat;
