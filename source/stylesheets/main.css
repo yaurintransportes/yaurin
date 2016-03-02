@@ -362,3 +362,29 @@ footer {
 	border-color: transparent;
 	border-radius: 3px;
 }
+
+div.services-list-title {
+	color: #00589F;
+	font-family: 'Merriweather', serif;
+	border-bottom: solid #666666 2px;
+	font-style: italic;
+	text-align: center;
+}
+
+ul.services-list li {
+	border-bottom: solid #666666 1px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 10px;
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+	font-weight: bold;
+}
+
+ul.services-list i {
+	color: #00589F;
+}
+
+div.services-list-container {
+	width: 22%;
+}
