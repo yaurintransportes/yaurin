@@ -1,7 +1,6 @@
 .left {
 	background: url(../images/welcome.jpg) no-repeat;
 	height: 300px;
-	overflow: hidden;
     float: left;
     width: 75%;
 }
@@ -10,10 +9,6 @@
     background-color: Aqua;
     margin-left: 75%;
     height: 300px;
-}
-
-.banner-wrapper {
-	overflow: hidden;
 }
 
 .cf:before,
@@ -387,4 +382,21 @@ ul.services-list i {
 
 div.services-list-container {
 	width: 22%;
+	float: left;
+}
+
+div.service-description {
+	margin-left: 22%;
+    width: 44%;
+    height: 190px;
+	border: solid;
+}
+
+li.service-unselected {
+	color: #666666;
+}
+
+div.footer {
+	width: 100%;
+	height: 10px;
 }
