@@ -1,73 +1,68 @@
 <div class="ad-spacer"></div>
-	<section class="bannercontact">
-		<header class="connect-header">
-			<hgroup>
-				<h1 class="connect-title">Let&#8217;s Connect</h1>
-			</hgroup>
-		</header>
 
-		<div class="connect-intro">
-			<p>Tell us how we can help your success.</p>
-		</div> 
-		<form action="contact" method="post" class="contact-form">
-			<div class="contact-field">
-				<label class="before">Your name<span>&#42;</span></label>
-				<input name="yourname" type="text" class="txt"  />
+<section class="bannercontact">
+	<header class="connect-header">
+		<hgroup>
+			<h1 class="connect-title">Let&#8217;s Connect</h1>
+		</hgroup>
+	</header>
+
+	<div class="connect-intro">
+		<p>Tell us how we can help your success.</p>
+	</div> 
+	<form action="contact" method="post" class="contact-form">
+		<div class="contact-field">
+			<label class="before">Your name<span>&#42;</span></label>
+			<input name="yourname" type="text" class="txt"  />
+		</div>
+
+		<div class="contact-field">
+			<label class="before">Email<span>&#42;</span></label>
+			<input name="email" type="text" class="txt"  />
+		</div>
+
+		<div class="contact-field">
+			<label class="before">Phone</label>
+			<input name="phone" type="text" class="txt"  />
+		</div>
+
+		<div class="contact-field">
+			<label class="before">Choose category</label>
+			<select name="how">
+				<option value=""> -- Please select -- </option>
+				<option>express service</option>
+				<option>supply solution</option>
+				<option>global mail</option>
+				<option>distribution</option>
+			</select>
+		</div>
+
+		<div class="row clearfix">
+			<input name="dogs" type="checkbox"/>
+			<label class="after">Express</label>
+			<input name="cats" type="checkbox"/>
+			<label class="after">freight</label>
+			<input name="mice" type="checkbox"/>
+			<label class="after">chain</label>
+
+		</div>
+
+		<div class="row clearfix">
+			<p>Do you like this website?
+				<input type="radio" name="likeit" value="Yes" checked="checked" /> Yes
+				<input type="radio" name="likeit" value="No" /> No
+				<input type="radio" name="likeit" value="Not sure" /> Not sure</p>
+
 			</div>
 
-			<div class="contact-field">
-				<label class="before">Email<span>&#42;</span></label>
-				<input name="email" type="text" class="txt"  />
+			<div class="row">
+				<p>Your comments</p>
+				<textarea name="comments" rows="10" cols="40"/></textarea>
 			</div>
 
-			<div class="contact-field">
-				<label class="before">Phone</label>
-				<input name="phone" type="text" class="txt"  />
+			<div class="row">
+				<input type="submit" class="btnsub" value="Submit" />
 			</div>
-
-			<div class="contact-field">
-				<label class="before">Choose category</label>
-				<select name="how">
-					<option value=""> -- Please select -- </option>
-					<option>express service</option>
-					<option>supply solution</option>
-					<option>global mail</option>
-					<option>distribution</option>
-				</select>
-			</div>
-
-			<div class="row clearfix">
-				<input name="dogs" type="checkbox"/>
-				<label class="after">Express</label>
-				<input name="cats" type="checkbox"/>
-				<label class="after">freight</label>
-				<input name="mice" type="checkbox"/>
-				<label class="after">chain</label>
-
-			</div>
-
-			<div class="row clearfix">
-				<p>Do you like this website?
-					<input type="radio" name="likeit" value="Yes" checked="checked" /> Yes
-					<input type="radio" name="likeit" value="No" /> No
-					<input type="radio" name="likeit" value="Not sure" /> Not sure</p>
-
-				</div>
-
-				<div class="row">
-					<p>Your comments</p>
-					<textarea name="comments" rows="10" cols="40"/></textarea>
-				</div>
-
-				<div class="row">
-					<input type="submit" class="btnsub" value="Submit" />
-				</div>
-			</div>
-		</form>	
-	</section>
-
-<footer>
-	<div class="wrapper">
-		© 2015 Transportes Yaurin. Made in NY.
-	</div>
-</footer>
+		</div>
+	</form>	
+</section>

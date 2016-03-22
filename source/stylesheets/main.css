@@ -230,8 +230,8 @@ label.before {
 .touts {
 	background: #F2F2F2;
 	overflow: hidden;
-	margin-bottom: 15px;
 }
+
 .tout {
 	float: left;
 	width: 33.3333%;
@@ -253,6 +253,11 @@ label.before {
 	width: 100%;
 	text-align: center;
 }
+
+.content-wrapper {
+	margin-bottom: 15px;
+}
+
 #hamburger{
 	display: none;
 }
