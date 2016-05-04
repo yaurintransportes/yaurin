@@ -10,11 +10,11 @@ $(function() {
 	},
 	{
 		label: "Furgonetas de 500kg",
-		text: ""
+		text: "Furgonetas de 500kg"
 	},
 	{
 		label: "Vehiculo con Conductor",
-		text: ""
+		text: "Vehiculo con Conductor"
 	},
 	{
 		label: "Furgonetas de 1500kg",
@@ -33,16 +33,31 @@ $(function() {
 		text: "last one"
 	}];
 
+	var setSelectedAndActive = function(index, text) {
+		$("div.service-description").html(text)
+		var selectedElement = $('li[data-id='+index+']');
+        selectedElement.addClass("active-text");
+        selectedElement.removeClass("inactive-text");
+	}
+
 	services.forEach(function(val, index){ 
 		var ul = $("ul.services-list").append(
-				"<li class='service-unselected' data-id='"+
+				"<li class='service-unselected inactive-text' data-type='service-description' data-id='"+
 				index+
 				"'><i class='fa fa-chevron-right'></i>"+
 				val.label
 				+"</li>"
 			);
+
 		ul.find("li[data-id="+index+"]").click(function(){
-			$("div.service-description").html(val.text);			
+			var selectedElements = $('li[data-type=service-description]');
+			selectedElements.each(function(index, element){
+	            $(element).addClass("inactive-text");
+    	        $(element).removeClass("active-text");
+			});
+			setSelectedAndActive(index, val.text);
 		});
-	});	
+	});
+
+	setSelectedAndActive(0, services[0].text);
 })

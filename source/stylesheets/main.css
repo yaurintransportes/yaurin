@@ -17,6 +17,14 @@
     height: 100%;
 }
 
+.active-text {
+	color: #FAAB18;
+}
+
+.inactive-text {
+	color: #666666;
+}
+
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
@@ -401,10 +409,6 @@ div.service-description {
     width: 44%;
     height: 190px;
 	border: solid;
-}
-
-li.service-unselected {
-	color: #666666;
 }
 
 div.footer {
