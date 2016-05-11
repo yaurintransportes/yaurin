@@ -40,24 +40,28 @@ $(function() {
         selectedElement.removeClass("inactive-text");
 	}
 
-	services.forEach(function(val, index){ 
+	services.forEach(function(service, index){
 		var ul = $("ul.services-list").append(
 				"<li class='service-unselected inactive-text' data-type='service-description' data-id='"+
 				index+
 				"'><i class='fa fa-chevron-right'></i>"+
-				val.label
+				service.label
 				+"</li>"
 			);
 
 		ul.find("li[data-id="+index+"]").click(function(){
-			var selectedElements = $('li[data-type=service-description]');
-			selectedElements.each(function(index, element){
-	            $(element).addClass("inactive-text");
-    	        $(element).removeClass("active-text");
-			});
-			setSelectedAndActive(index, val.text);
+			var serviceLinks = $('li[data-type=service-description]');
+			setAllServicesUnselected(serviceLinks);
+			setSelectedAndActive(index, service.text);
 		});
 	});
+
+	function setAllServicesUnselected(selectedElements) {
+		selectedElements.each(function(index, element){
+            $(element).addClass("inactive-text");
+	        $(element).removeClass("active-text");
+		});
+	}
 
 	setSelectedAndActive(0, services[0].text);
 })
