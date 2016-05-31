@@ -41,7 +41,7 @@ $(function() {
 	}
 
 	services.forEach(function(service, index){
-		var ul = $("ul.services-list").append(
+		var ul = $($('ul[data-type=services-list]')).append(
 				"<li class='service-unselected inactive-text' data-type='service-description' data-id='"+
 				index+
 				"'><i class='fa fa-chevron-right'></i>"+
