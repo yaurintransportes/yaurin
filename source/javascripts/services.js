@@ -33,35 +33,5 @@ $(function() {
 		text: "last one"
 	}];
 
-	var setSelectedAndActive = function(index, text) {
-		$("div.service-description").html(text)
-		var selectedElement = $('li[data-id='+index+']');
-        selectedElement.addClass("active-text");
-        selectedElement.removeClass("inactive-text");
-	}
-
-	services.forEach(function(service, index){
-		var ul = $($('ul[data-type=services-list]')).append(
-				"<li class='service-unselected inactive-text' data-type='service-description' data-id='"+
-				index+
-				"'><i class='fa fa-chevron-right'></i>"+
-				service.label
-				+"</li>"
-			);
-
-		ul.find("li[data-id="+index+"]").click(function(){
-			var serviceLinks = $('li[data-type=service-description]');
-			setAllServicesUnselected(serviceLinks);
-			setSelectedAndActive(index, service.text);
-		});
-	});
-
-	function setAllServicesUnselected(selectedElements) {
-		selectedElements.each(function(index, element){
-            $(element).addClass("inactive-text");
-	        $(element).removeClass("active-text");
-		});
-	}
-
-	setSelectedAndActive(0, services[0].text);
+	initializeSelectableList(services, "services-list");
 })
