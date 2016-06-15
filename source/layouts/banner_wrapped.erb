@@ -1,0 +1,10 @@
+ <% wrap_layout :layout do %>
+	<div class="content-panes">
+		<div class="left-content-pane">
+			<%= partial "banner" %>
+		    <%= yield %>
+		</div>
+		<div class="right-content-pane">
+		</div>
+	</div>
+<% end %>

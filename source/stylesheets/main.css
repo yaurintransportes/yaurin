@@ -5,15 +5,30 @@
 .left {
 	background: url(../images/welcome.jpg) no-repeat;
     height: 100%;
+    width: 100%;
     float: left;
-    width: 69%;
     border: solid #FAAB18 3px;
     box-sizing: border-box;
     background-size: cover;
 }
 
+.content-panes {
+	height: 100%;
+}
+
+.left-content-pane {
+	width: 69%;
+	box-sizing: border-box;
+	float: left;
+	height: 100%;
+}
+
+.right-content-pane {
+	margin-left: 69%;
+	height: 100%;
+}
+
 .right {
-    margin-left: 69%;
     height: 100%;
 }
 
@@ -268,6 +283,7 @@ label.before {
 
 .content-wrapper {
 	margin-bottom: 15px;
+	height: 410px;
 }
 
 #hamburger{
@@ -398,21 +414,22 @@ ul.selectable-list i {
 }
 
 div.selectable-list-container {
-	width: 22%;
+	width: 30%;
 	float: left;
 }
 
 div.selectable-list-description {
-	margin-left: 22%;
-    width: 44%;
-    height: 190px;
-	border: solid;
-	padding: 10px;
+	margin-left: 30%;
+    width: 66%;
+    height: 100%;
+	padding: 2%;
 }
+
 .email {
-color: blue;
-margin-bottom: 15px;
+	color: blue;
+	margin-bottom: 15px;
 }
+
 .contact-me {	
 	margin-top: 30px;
 }
