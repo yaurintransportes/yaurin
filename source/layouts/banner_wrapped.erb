@@ -1,10 +1,14 @@
- <% wrap_layout :layout do %>
-	<div class="content-panes">
+<% wrap_layout :layout do %>
+	<section class="content-panes">
 		<div class="left-content-pane">
 			<%= partial "banner" %>
 		    <%= yield %>
 		</div>
 		<div class="right-content-pane">
+			<div class="right-content">
+			    <% right_content_partial = page_classes + "_right_content" %>
+				<%= partial right_content_partial %>				
+			</div>
 		</div>
-	</div>
+	</section>
 <% end %>

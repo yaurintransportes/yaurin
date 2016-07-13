@@ -16,7 +16,7 @@ var pictures = [
 	var animateBannerPictures = function(index=0) {
 		setTimeout(function(){
 			divLeft = $('div.left');
-			divLeft.animate({opacity: 0}, "fast", function() {
+			divLeft.animate({opacity: 0}, "medium", function() {
 				divLeft
 					.css("background-image", "url(../images/"+pictures[index]+")")
 					.animate({opacity: 1})

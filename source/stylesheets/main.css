@@ -12,7 +12,7 @@
     background-size: cover;
 }
 
-.content-panes {
+section.content-panes {
 	height: 100%;
 }
 
@@ -24,7 +24,14 @@
 }
 
 .right-content-pane {
-	margin-left: 69%;
+	float: left;
+	width: 31%;
+	height: 100%;
+}
+
+.right-content {
+	background-color: #FAAB18;
+	margin: 20px;
 	height: 100%;
 }
 
