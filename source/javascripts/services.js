@@ -6,7 +6,7 @@ $(function() {
 $(function() {
 	var services = [{
 		label: "Remplazos Servicio Express",
-		text: "<h1>Bla blah blahhh</h1>TRANSPORTES YAURIN es un socio logístico lo suficientemente grande como para transportar carga de cualquier tipo y hacia cualquier destino por vía aérea, marítima, terrestre o ferroviaria, y a la vez, capaz de brindar a sus clientes la atención personal que necesitan. Bienvenido a transportesyauri"
+		text: "<h1>Vehiculos Frigorificos</h1>TRANSPORTES YAURIN es un socio logístico lo suficientemente grande como para transportar carga de cualquier tipo y hacia cualquier destino por vía aérea, marítima, terrestre o ferroviaria, y a la vez, capaz de brindar a sus clientes la atención personal que necesitan. Bienvenido a transportesyauri"
 	},
 	{
 		label: "Furgonetas de 500kg",
@@ -34,4 +34,9 @@ $(function() {
 	}];
 
 	initializeSelectableList(services, "services-list");
-})
+});
+
+var expandItem = function(iteamName) {
+	var itemDetails = $('[data-item-name="' + iteamName +'"]');
+	itemDetails.toggleClass('collapsed');
+}

@@ -449,7 +449,41 @@ div.selectable-list-description {
 	color: white;
 }
 
+div.header {
+	width: 100%;
+	text-align: center;
+}
+
+img.services-icon{
+	display: inline-block;
+}
+
 div.footer {
 	width: 100%;
 	height: 10px;
+}
+
+.expandable-item {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-align: center;
+	border: solid 1px blue;
+	width: 100%;
+}
+
+.collapsed .expandable-item-details {
+    display: none;
+}
+
+.collapsed {
+	background-color: white;
+}
+
+.service-prices-container {
+	padding-top: 25%;
+}
+
+.sidebar-buttons-wrapper {
+	width: 70%;	
+	margin: auto;
 }
