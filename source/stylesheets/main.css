@@ -272,6 +272,12 @@ label.before {
 	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
 }
 
+.about-column {
+	float: left;
+	width: 50%;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+}
+
 .tout p { }
 
 .tout:last-child {
@@ -279,7 +285,7 @@ label.before {
 
 }
 
-.tout .secNavButton {
+.secNavButton {
 	color: #FAAB18;
 	cursor: pointer;
 	bottom: 0;
